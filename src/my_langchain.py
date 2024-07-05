@@ -17,10 +17,7 @@ output_parser = StrOutputParser()
 def extract_information(img):
     prompt_text = ("첨부의 이미지가 나타내는 지역에 대한 부동산 정보 알려 줘"
                    "매매가격(저가, 고가, 평균가), 전세가격(저, 고, 평균), 교통상황(대중, 자가), 건물 외관 상태, 학군정보"
-                   "위의 모든 정보에 대하여 0~100 점 사이의 점수도 추가 해 줘."
-                   "이 정보들을 json형식으로 생성해 줘. json의 키는 점수는 'point'로 나머지들은 각각"
-                   "'price', 'low', 'high', 'middle', 'jonse', 'traffic', 'public', 'private', 'school"
-                   "으로 해 줘.")
+                   "위의 모든 정보에 대하여 0~100 점 사이의 점수도 추가 해 줘.")
     prompt_template = HumanMessagePromptTemplate.from_template(
         template=[
             {"type": "text", "text": prompt_text},

@@ -28,7 +28,7 @@ def by_gpt(img_file):
     img_data = image_to_data_url(img_file)
     information = extract_information(img_data)
     # addresses = recommend_estate(information)
-    return jsonify(addresses), 200
+    return jsonify(information), 200
 
 
 def by_vit(img_file):

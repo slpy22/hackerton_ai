@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33734987-2574-4e14-9159-87eaf8240de4" name="Changes" comment="사용설명 추가">
-      <change afterPath="$PROJECT_DIR$/src/my_vit.py" afterDir="false" />
+    <list default="true" id="33734987-2574-4e14-9159-87eaf8240de4" name="Changes" comment="gpt와 vit모델에 의해 평가하는 api를 분리&#10;/by_gpt : gpt모델로 평가&#10;/by_vit : vit모델로 평가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/estate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/spec/estate.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/estate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/estate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +36,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/myself/hackertone/evaluate_svc/src"
   }
 }]]></component>
@@ -125,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720165807674</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gpt와 vit모델에 의해 평가하는 api를 분리&#10;/by_gpt : gpt모델로 평가&#10;/by_vit : vit모델로 평가">
+      <option name="closed" value="true" />
+      <created>1720221419835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720221419835</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,17 +161,7 @@
     <MESSAGE value="일단 작동은 되는데 결과는 형편 없음" />
     <MESSAGE value="리드미 수정" />
     <MESSAGE value="사용설명 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="사용설명 추가" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/estate.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="gpt와 vit모델에 의해 평가하는 api를 분리&#10;/by_gpt : gpt모델로 평가&#10;/by_vit : vit모델로 평가" />
+    <option name="LAST_COMMIT_MESSAGE" value="gpt와 vit모델에 의해 평가하는 api를 분리&#10;/by_gpt : gpt모델로 평가&#10;/by_vit : vit모델로 평가" />
   </component>
 </project>
