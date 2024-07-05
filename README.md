@@ -29,3 +29,9 @@
 
 ## 실행
 - python -m src.main
+
+## API 호출 테스트
+- url : http://localhost:8010/estate/predict
+- method : POST
+- body : form-data 
+  - img_file : 여기에 이미지 파일 첨부

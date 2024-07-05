@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33734987-2574-4e14-9159-87eaf8240de4" name="Changes" comment="일단 작동은 되는데 결과는 형편 없음">
+    <list default="true" id="33734987-2574-4e14-9159-87eaf8240de4" name="Changes" comment="리드미 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -106,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720164681008</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="리드미 수정">
+      <option name="closed" value="true" />
+      <created>1720164965953</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720164965953</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="초판" />
     <MESSAGE value="일단 작동은 되는데 결과는 형편 없음" />
-    <option name="LAST_COMMIT_MESSAGE" value="일단 작동은 되는데 결과는 형편 없음" />
+    <MESSAGE value="리드미 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="리드미 수정" />
   </component>
 </project>
