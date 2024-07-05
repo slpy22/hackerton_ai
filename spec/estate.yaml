@@ -8,19 +8,32 @@ servers:
 paths:
   /predict:
     post:
-      summary: 현재 진동데이터에 대한 평가 예측(정상/이상)
-      operationId: src.sensing.main.predict
+      summary: 이미지를 분석하여 유사한 매물 주소 목록을 리턴한다.
+      operationId: estate.predict
       responses:
         '200':
-          description: 예측 결과
+          description: A list of street addresses
           content:
-            '*/*':
+            application/json:
               schema:
-                type: string
+                type: array
+                items:
+                  type: string
+                example:
+                  - "123 Main St, Springfield, IL"
+                  - "456 Elm St, Shelbyville, IL"
+        '400':
+          description: Invalid input
+        '500':
+          description: Internal server error
       requestBody:
+        required: true
         content:
-          application/json:
+          multipart/form-data:
             schema:
-              type: array
-              items:
-                type: object
+              type: object
+              properties:
+                img_file:
+                  type: string
+                  format: binary
+                  description: The image file to process
