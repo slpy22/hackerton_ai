@@ -6,22 +6,43 @@ servers:
   - url: /estate
 
 paths:
-  /predict:
+  /by_gpt:
     post:
-      summary: 이미지를 분석하여 유사한 매물 주소 목록을 리턴한다.
-      operationId: estate.predict
+      summary: 이미지를 분석하여 입지정보를 분석해 준다.
+      operationId: estate.by_gpt
       responses:
         '200':
           description: A list of street addresses
           content:
             application/json:
               schema:
-                type: array
-                items:
+                type: string
+        '400':
+          description: Invalid input
+        '500':
+          description: Internal server error
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                img_file:
                   type: string
-                example:
-                  - "123 Main St, Springfield, IL"
-                  - "456 Elm St, Shelbyville, IL"
+                  format: binary
+                  description: The image file to process
+  /by_vit:
+    post:
+      summary: 이미지를 분석하여 입지정보를 분석해 준다.
+      operationId: estate.by_vit
+      responses:
+        '200':
+          description: A list of street addresses
+          content:
+            application/json:
+              schema:
+                type: string
         '400':
           description: Invalid input
         '500':

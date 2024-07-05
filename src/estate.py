@@ -4,6 +4,7 @@ import base64
 from flask import jsonify
 from mimetypes import guess_type
 from my_langchain import extract_information, recommend_estate
+from my_vit import vit_old_new, vit_best_worst
 
 
 # Function to encode a local image into data URL
@@ -19,19 +20,23 @@ def image_to_data_url(image_file):
     return f"data:{mime_type};base64,{base64_encoded_data}"
 
 
-def predict(img_file):
+def by_gpt(img_file):
     """
-    이미지 분석하여 후보 추천 하는 함수
-    :return: 매물 위치 도로명 주소의 배열
+    이미지 분석하여 해당 지역 부동산 관련 정보 추출
+    :return: 부동산정보 설명
     """
-    # file_path = os.path.join(os.getcwd(), img_file.filename)
-    # img_file.save(file_path)
-
     img_data = image_to_data_url(img_file)
-
     information = extract_information(img_data)
-    addresses = recommend_estate(information)
-    # addresses = ["123 Main St, Springfield, IL", "456 Elm St, Shelbyville, IL"]  # 예제 응답
-
-    # os.remove(file_path)
+    # addresses = recommend_estate(information)
     return jsonify(addresses), 200
+
+
+def by_vit(img_file):
+    """
+    이미지 분석하여 해당 지역 부동산 관련 정보 추출
+    :return: 부동산정보 설명
+    """
+    img_binary = img_file.read()
+    result = vit_best_worst(img_binary)
+    result.extend(vit_old_new(img_binary))
+    return result

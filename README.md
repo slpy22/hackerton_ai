@@ -30,8 +30,15 @@
 ## 실행
 - python -m src.main
 
-## API 호출 테스트
-- url : http://localhost:8010/estate/predict
+## API 호출 테스트(gpt4o모델에 의한 평가)
+- url : http://localhost:8010/estate/by_gpt
 - method : POST
 - body : form-data 
   - img_file : 여기에 이미지 파일 첨부
+
+## API 호출 테스트(허깅페이스의 vit 모델에 의한 평가)
+- url : http://localhost:8010/estate/by_vit
+- method : POST
+- body : form-data 
+  - img_file : 여기에 이미지 파일 첨부
+

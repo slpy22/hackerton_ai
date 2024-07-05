@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33734987-2574-4e14-9159-87eaf8240de4" name="Changes" comment="리드미 수정">
+    <list default="true" id="33734987-2574-4e14-9159-87eaf8240de4" name="Changes" comment="사용설명 추가">
+      <change afterPath="$PROJECT_DIR$/src/my_vit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/estate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/spec/estate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/estate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "E:/myself/hackertone/evaluate_svc"
+    "last_opened_file_path": "E:/myself/hackertone/evaluate_svc/src"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -114,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720164965953</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="사용설명 추가">
+      <option name="closed" value="true" />
+      <created>1720165807674</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720165807674</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +155,18 @@
     <MESSAGE value="초판" />
     <MESSAGE value="일단 작동은 되는데 결과는 형편 없음" />
     <MESSAGE value="리드미 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="리드미 수정" />
+    <MESSAGE value="사용설명 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="사용설명 추가" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/estate.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
